@@ -1,4 +1,4 @@
-export interface product {
+export interface Product {
   product_no: number;
   product_name: string;
   main_image_url: string;

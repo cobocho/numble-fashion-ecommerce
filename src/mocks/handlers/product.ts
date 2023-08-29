@@ -1,9 +1,11 @@
 import { rest } from 'msw';
-import { product } from '../../types/product';
+import { Product } from '../../types/product';
 import { products } from '../dummy/product';
+import { API_PATH } from '../../constants/path';
+import { base } from '../utils/url';
 
 const productHandlers = [
-  rest.get<product>('/products', (req, res, ctx) => {
+  rest.get<Product[]>(base(API_PATH.PRODUCTS.ALL), (req, res, ctx) => {
     return res(ctx.status(200), ctx.json(products));
   }),
 ];
