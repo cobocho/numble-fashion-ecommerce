@@ -1,11 +1,15 @@
 import styled from '@emotion/styled';
 import { Outlet } from 'react-router-dom';
+import Header from '../Header';
 
 const Layout = () => {
   return (
-    <Container>
-      <Outlet />
-    </Container>
+    <>
+      <Header />
+      <Container>
+        <Outlet />
+      </Container>
+    </>
   );
 };
 

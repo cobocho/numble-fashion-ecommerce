@@ -1,9 +1,7 @@
-import { useGetAllProducts } from '../../api/product.api';
+import * as Style from './index.style';
 
 const Main = () => {
-  const { data, isLoading } = useGetAllProducts();
-
-  return <div>Main!!!!!</div>;
+  return <Style.Container>Main!!!!!</Style.Container>;
 };
 
 export default Main;
