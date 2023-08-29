@@ -1,5 +1,6 @@
 export const ROUTE_PATH = Object.freeze({
   BASE: '/',
+  LOGIN: '/login',
 });
 
 export const API_PATH = Object.freeze({
@@ -11,5 +12,9 @@ export const API_PATH = Object.freeze({
 
   USER: {
     BY_ID: '/user/:id',
+  },
+
+  AUTH: {
+    TOKEN: '/auth',
   },
 });

@@ -20,6 +20,7 @@ const Layout = () => {
 const Container = styled.div`
   width: 1152px;
   height: 800px;
+  padding-top: 100px;
   margin: auto;
 
   @media (max-width: 1152px) {

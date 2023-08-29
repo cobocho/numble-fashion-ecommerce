@@ -1,6 +1,7 @@
+import authHandlers from './handlers/auth';
 import productHandlers from './handlers/product';
-import { userHandler } from './handlers/user';
+import userHandler from './handlers/user';
 
-const handlers = [...productHandlers, ...userHandler];
+const handlers = [...productHandlers, ...userHandler, ...authHandlers];
 
 export default handlers;

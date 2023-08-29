@@ -6,3 +6,9 @@ export interface User {
   mileage: number;
   createdAt: string;
 }
+
+export interface Token {
+  token: string;
+  success: boolean;
+  deny_message?: string;
+}
