@@ -1,3 +1,5 @@
-import { rest } from 'msw';
+import productHandlers from './handlers/product';
 
-export const handlers = [];
+const handlers = [...productHandlers];
+
+export default handlers;
