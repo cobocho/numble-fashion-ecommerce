@@ -10,5 +10,6 @@ export interface User {
 export interface Token {
   token: string;
   success: boolean;
+  user?: User;
   deny_message?: string;
 }
