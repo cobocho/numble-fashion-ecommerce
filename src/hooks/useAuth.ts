@@ -1,22 +1,28 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useGetToken } from '../../api/auth.api';
-import userStore from '../../store/user.ts';
-import { ROUTE_PATH } from '../../constants/path.ts';
+import { useGetToken } from '../api/auth.api.ts';
+import userStore from '../store/user.ts';
+import { ROUTE_PATH } from '../constants/path.ts';
 
-const useLogin = () => {
+const useAuth = () => {
   const [id, setId] = useState<string>('');
   const [password, setPassword] = useState<string>('');
   const { data, refetch, isFetching } = useGetToken(id, password);
-  const { setUser } = userStore();
+  const { setUser, clearUser } = userStore();
 
   const navigate = useNavigate();
 
   const idChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => setId(e.target.value);
   const pwChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => setPassword(e.target.value);
+
   const login = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     refetch();
+  };
+
+  const logout = () => {
+    clearUser();
+    navigate(ROUTE_PATH.BASE);
   };
 
   useEffect(() => {
@@ -37,7 +43,8 @@ const useLogin = () => {
     idChangeHandler,
     pwChangeHandler,
     login,
+    logout,
   };
 };
 
-export default useLogin;
+export default useAuth;

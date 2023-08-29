@@ -1,10 +1,10 @@
 import * as Style from './index.style';
 import Input from '../../common/input';
 import Button from '../../common/Button/index.tsx';
-import useLogin from './useLogin.ts';
+import useAuth from '../../hooks/useAuth.ts';
 
 const Login = () => {
-  const { idChangeHandler, pwChangeHandler, login } = useLogin();
+  const { idChangeHandler, pwChangeHandler, login } = useAuth();
 
   return (
     <Style.Container>
