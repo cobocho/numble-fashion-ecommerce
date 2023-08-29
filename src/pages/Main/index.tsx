@@ -7,7 +7,7 @@ const Main = () => {
 
   return (
     <Style.Container>
-      <ProductList products={products!} />
+      <ProductList products={products ? products : []} />
     </Style.Container>
   );
 };

@@ -8,7 +8,7 @@ export const ROUTE_PATH = Object.freeze({
 });
 
 export const API_PATH = Object.freeze({
-  BASE: '/api',
+  BASE: 'http://localhost:5173/api',
 
   PRODUCTS: {
     ALL: '/product/products',
