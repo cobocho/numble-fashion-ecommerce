@@ -9,5 +9,8 @@ export const getAllProducts = async () => {
 };
 
 export const useGetAllProducts = (options?: UseQueryOptions<Product[]>) => {
-  return useQuery<Product[]>([QUERY_KEY.PRODUCT.ALL_PRODUCTS], getAllProducts, options);
+  return useQuery<Product[]>([QUERY_KEY.PRODUCT.ALL_PRODUCTS], getAllProducts, {
+    suspense: true,
+    ...options,
+  });
 };

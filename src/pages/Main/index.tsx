@@ -3,19 +3,11 @@ import ProductList from '../../components/ProductList';
 import * as Style from './index.style';
 
 const Main = () => {
-  const { data: products, isLoading, isError } = useGetAllProducts();
-
-  if (isLoading) {
-    return <div>loading</div>;
-  }
-
-  if (isError) {
-    return <div>error</div>;
-  }
+  const { data: products } = useGetAllProducts();
 
   return (
     <Style.Container>
-      <ProductList products={products} />
+      <ProductList products={products!} />
     </Style.Container>
   );
 };

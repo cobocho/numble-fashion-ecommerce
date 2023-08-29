@@ -7,6 +7,7 @@ export const Container = styled.div`
 export const Image = styled.img`
   width: 240px;
   height: 240px;
+  object-fit: cover;
 `;
 
 export const Name = styled.h3`
