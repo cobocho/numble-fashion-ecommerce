@@ -1,7 +1,7 @@
-import Main from '../src/pages/Main';
+import Main from '@/pages/Main';
 import { describe, it, expect } from 'vitest';
 import { screen, waitFor } from '@testing-library/react';
-import queryRender from './QueryRender';
+import queryRender from './queryRender';
 
 describe('메인페이지 테스트', () => {
   beforeEach(() => {

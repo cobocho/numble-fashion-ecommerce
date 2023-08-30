@@ -1,7 +1,7 @@
 import { rest } from 'msw';
-import { User } from '../../types/user';
+import { User } from '@/types/user';
+import { API_PATH } from '@/constants/path';
 import { base } from '../utils/url';
-import { API_PATH } from '../../constants/path';
 import { user } from '../dummy/user';
 
 const userHandler = [

@@ -2,9 +2,9 @@ import { useNavigate } from 'react-router-dom';
 import { describe, it, vi } from 'vitest';
 import { screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import queryRender from './QueryRender';
-import Login from '../src/pages/Login';
+import Login from '@/pages/Login';
 import { ROUTE_PATH } from '@/constants/path';
+import queryRender from './queryRender';
 
 vi.mock('react-router-dom');
 

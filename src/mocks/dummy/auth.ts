@@ -1,4 +1,4 @@
-import { Token } from '../../types/user';
+import { Token } from '@/types/user';
 import { user } from './user';
 
 export const successToken: Token = {
