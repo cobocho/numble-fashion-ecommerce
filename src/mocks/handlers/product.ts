@@ -6,7 +6,7 @@ import { base } from '../utils/url';
 
 const productHandlers = [
   rest.get<Product[]>(base(API_PATH.PRODUCTS.ALL), (req, res, ctx) => {
-    return res(ctx.status(200), ctx.json(products), ctx.delay(1000));
+    return res(ctx.status(200), ctx.json(products), ctx.delay(500));
   }),
 ];
 

@@ -11,7 +11,7 @@ const authHandlers = [
 
     const existUser = id === 'test' && password === 'test';
 
-    return res(ctx.status(200), ctx.json(existUser ? successToken : failedToken), ctx.delay(1000));
+    return res(ctx.status(200), ctx.json(existUser ? successToken : failedToken), ctx.delay(500));
   }),
 ];
 

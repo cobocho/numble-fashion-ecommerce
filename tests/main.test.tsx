@@ -12,12 +12,7 @@ describe('메인페이지 테스트', () => {
     const loading = screen.getByText('LOADING...');
     expect(loading).toBeDefined();
 
-    await waitFor(
-      () => {
-        const articleElements = screen.getAllByRole('article');
-        expect(articleElements).toHaveLength(20);
-      },
-      { timeout: 2000 }
-    );
+    const articleElements = await waitFor(() => screen.getAllByRole('article'));
+    expect(articleElements).toHaveLength(20);
   });
 });

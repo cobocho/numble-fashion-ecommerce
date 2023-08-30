@@ -17,7 +17,7 @@ const queryRender = (element: JSX.Element) => {
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
         <Header />
-        <Suspense fallback={<Loading />}>{element}</Suspense>{' '}
+        <Suspense fallback={<Loading />}>{element}</Suspense>
       </BrowserRouter>
     </QueryClientProvider>
   );
