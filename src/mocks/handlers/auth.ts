@@ -1,7 +1,7 @@
 import { rest } from 'msw';
-import { API_PATH } from '../../constants/path';
+import { API_PATH } from '@/constants/path';
+import { Token } from '@/types/user';
 import { base } from '../utils/url';
-import { Token } from '../../types/user';
 import { successToken, failedToken } from '../dummy/auth';
 
 const authHandlers = [

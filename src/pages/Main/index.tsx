@@ -1,5 +1,5 @@
-import { useGetAllProducts } from '../../api/product.api';
-import ProductList from '../../components/ProductList';
+import { useGetAllProducts } from '@/api/product.api';
+import ProductList from '@/components/ProductList';
 import * as Style from './index.style';
 
 const Main = () => {

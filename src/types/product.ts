@@ -5,6 +5,6 @@ export interface Product {
   price: number;
   prev_delivery_times: number[];
   description: string;
-  available_coupon: boolean;
-  maximum_quantity: number;
+  available_coupon?: boolean;
+  maximum_quantity?: number | null;
 }

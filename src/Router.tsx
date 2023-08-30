@@ -1,10 +1,10 @@
 import { Route, Routes } from 'react-router-dom';
-import { ROUTE_PATH } from './constants/path';
-import Main from './pages/Main';
-import Layout from './components/Layout';
-import Login from './pages/Login';
-import Logout from './pages/Logout';
-import MyPage from './pages/MyPage';
+import { ROUTE_PATH } from '@/constants/path';
+import Main from '@/pages/Main';
+import Layout from '@/components/Layout';
+import Login from '@/pages/Login';
+import Logout from '@/pages/Logout';
+import MyPage from '@/pages/MyPage';
 
 const Router = () => {
   return (

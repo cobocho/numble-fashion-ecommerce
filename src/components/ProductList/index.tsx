@@ -1,5 +1,5 @@
-import { Product } from '../../types/product';
-import ProductItem from '../ProductItem';
+import { Product } from '@/types/product';
+import ProductItem from '@/components/ProductItem';
 import * as Style from './index.style';
 
 interface Props {

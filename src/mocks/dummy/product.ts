@@ -1,4 +1,6 @@
-export const products = [
+import { Product } from '@/types/product';
+
+export const products: Product[] = [
   {
     product_no: 540998,
     product_name: '스포티 골프 셔츠',

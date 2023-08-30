@@ -1,7 +1,7 @@
 import * as Style from './index.style';
-import Input from '../../common/input';
-import Button from '../../common/Button/index.tsx';
-import useAuth from './useAuth.ts';
+import Input from '@/common/input';
+import Button from '@/common/Button/index.tsx';
+import useAuth from '@/hooks/useAuth.ts';
 
 const Login = () => {
   const { idChangeHandler, pwChangeHandler, login } = useAuth();

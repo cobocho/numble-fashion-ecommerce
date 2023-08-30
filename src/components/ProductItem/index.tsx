@@ -1,5 +1,5 @@
 import * as Style from './index.style';
-import { Product } from '../../types/product';
+import { Product } from '@/types/product';
 
 interface Props {
   product: Product;

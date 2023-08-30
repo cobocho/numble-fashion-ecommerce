@@ -1,4 +1,4 @@
-import { API_PATH } from '../../constants/path';
+import { API_PATH } from '@/constants/path';
 
 const request = async (url: string, requestOptions?: RequestInit) => {
   try {

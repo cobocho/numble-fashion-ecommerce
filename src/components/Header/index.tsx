@@ -1,5 +1,5 @@
-import { ROUTE_PATH } from '../../constants/path';
-import userStore from '../../store/user';
+import { ROUTE_PATH } from '@/constants/path';
+import userStore from '@/store/user';
 import * as Style from './index.style';
 
 const Header = () => {

@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useGetToken } from '../../api/auth.api.ts';
-import userStore from '../../store/user.ts';
-import { ROUTE_PATH } from '../../constants/path.ts';
+import { useGetToken } from '@/api/auth.api.ts';
+import userStore from '@/store/user.ts';
+import { ROUTE_PATH } from '@/constants/path.ts';
 
 const useAuth = () => {
   const [id, setId] = useState<string>('');

@@ -1,6 +1,6 @@
 import { UseQueryOptions, useQuery } from '@tanstack/react-query';
-import { API_PATH } from '../constants/path';
-import { Token } from '../types/user';
+import { API_PATH } from '@/constants/path';
+import { Token } from '@/types/user';
 import request from './core/request';
 
 export const getToken = async (id: string, password: string) => {

@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
 import { Outlet } from 'react-router-dom';
-import Header from '../Header';
 import { Suspense } from 'react';
-import Loading from '../Loading';
+import Loading from '@/components/Loading';
+import Header from '@/components/Header';
 
 const Layout = () => {
   return (
