@@ -2,7 +2,7 @@ import { rest } from 'msw';
 import { API_PATH } from '@/constants/path';
 import { Token } from '@/types/user';
 import { base } from '../utils/url';
-import { successToken, failedToken } from '../dummy/auth';
+import { successToken, failedToken } from '../fixture/auth';
 
 const authHandlers = [
   rest.get<Token>(base(API_PATH.AUTH.TOKEN), (req, res, ctx) => {

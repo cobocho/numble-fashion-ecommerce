@@ -3,7 +3,7 @@ import { screen, waitFor } from '@testing-library/react';
 import queryRender from './utils/queryRender';
 import UserPage from '@/pages/UserPage';
 import userStore from '@/store/user';
-import { user } from '@/mocks/dummy/user';
+import { user } from '@/mocks/fixture/user';
 
 vi.mock('react-router-dom');
 

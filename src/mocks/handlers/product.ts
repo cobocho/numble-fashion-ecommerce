@@ -1,7 +1,7 @@
 import { rest } from 'msw';
 import { Product } from '@/types/product';
 import { API_PATH } from '@/constants/path';
-import { products } from '../dummy/product';
+import { products } from '../fixture/product';
 import { base } from '../utils/url';
 
 const productHandlers = [

@@ -8,7 +8,7 @@ const useAuth = () => {
   const [id, setId] = useState<string>('');
   const [password, setPassword] = useState<string>('');
   const { data, refetch, isFetching } = useGetToken(id, password);
-  const { setUser, clearUser } = userStore();
+  const { user, setUser, clearUser } = userStore();
 
   const navigate = useNavigate();
 
@@ -44,6 +44,7 @@ const useAuth = () => {
     pwChangeHandler,
     login,
     logout,
+    user,
   };
 };
 

@@ -43,4 +43,5 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
     return hasError ? <div>오류가 발생했어요! 에러 메시지: {error && error.message}</div> : children;
   }
 }
+
 export default ErrorBoundary;

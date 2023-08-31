@@ -2,7 +2,7 @@ import { rest } from 'msw';
 import { User } from '@/types/user';
 import { API_PATH } from '@/constants/path';
 import { base } from '../utils/url';
-import { otherUser, user } from '../dummy/user';
+import { otherUser, user } from '../fixture/user';
 
 const userHandler = [
   rest.get<User>(base(API_PATH.USER.BY_ID), (req, res, ctx) => {

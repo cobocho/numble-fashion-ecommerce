@@ -1,13 +1,13 @@
 import { useGetUserById } from '@/api/user.api';
-import userStore from '@/store/user';
+import useAuth from '@/hooks/useAuth';
 import { useParams } from 'react-router-dom';
 
 const UserPage = () => {
   const { id } = useParams();
-  const { user: currentUser } = userStore();
+  const { user: currentUser } = useAuth();
   const { data: user } = useGetUserById(id!);
 
-  const isMyPage = currentUser?.user_id === user?.user_id;
+  const isMyPage = currentUser?.user_id === user!.user_id;
 
   return (
     <>
