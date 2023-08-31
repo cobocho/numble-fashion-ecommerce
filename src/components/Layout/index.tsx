@@ -3,16 +3,19 @@ import { Outlet } from 'react-router-dom';
 import { Suspense } from 'react';
 import Loading from '@/components/Loading';
 import Header from '@/components/Header';
+import ErrorBoundary from '../ErrorBoundary';
 
 const Layout = () => {
   return (
     <>
       <Header />
-      <Suspense fallback={<Loading />}>
-        <Container>
-          <Outlet />
-        </Container>
-      </Suspense>
+      <Container>
+        <ErrorBoundary>
+          <Suspense fallback={<Loading />}>
+            <Outlet />
+          </Suspense>
+        </ErrorBoundary>
+      </Container>
     </>
   );
 };

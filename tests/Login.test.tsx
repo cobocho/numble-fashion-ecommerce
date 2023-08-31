@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import { describe, it, vi } from 'vitest';
 import { screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import queryRender from './queryRender';
+import queryRender from './utils/queryRender';
 import Login from '@/pages/Login';
 import { ROUTE_PATH } from '@/constants/path';
 

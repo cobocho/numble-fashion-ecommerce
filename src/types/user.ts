@@ -1,8 +1,10 @@
+import { CouponCategory } from './coupon';
+
 export interface User {
   user_id: string;
   user_name: string;
   user_nickname: string;
-  coupons: object[];
+  coupons: CouponCategory[];
   mileage: number;
   createdAt: string;
 }

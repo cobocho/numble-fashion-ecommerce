@@ -4,7 +4,7 @@ import Main from '@/pages/Main';
 import Layout from '@/components/Layout';
 import Login from '@/pages/Login';
 import Logout from '@/pages/Logout';
-import MyPage from '@/pages/MyPage';
+import UserPage from '@/pages/UserPage';
 
 const Router = () => {
   return (
@@ -24,7 +24,7 @@ const Router = () => {
         />
         <Route
           path={ROUTE_PATH.USER_PAGE}
-          element={<MyPage />}
+          element={<UserPage />}
         />
       </Route>
     </Routes>
