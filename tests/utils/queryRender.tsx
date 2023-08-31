@@ -1,5 +1,5 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { BrowserRouter } from 'react-router-dom';
+import { MemoryRouter } from 'react-router-dom';
 import { render } from '@testing-library/react';
 import Header from '@/components/Header';
 import { Suspense } from 'react';
@@ -15,10 +15,10 @@ const queryRender = (element: JSX.Element) => {
   });
   render(
     <QueryClientProvider client={queryClient}>
-      <BrowserRouter>
+      <MemoryRouter>
         <Header />
         <Suspense fallback={<Loading />}>{element}</Suspense>
-      </BrowserRouter>
+      </MemoryRouter>
     </QueryClientProvider>
   );
 };

@@ -20,6 +20,7 @@ const request = async (url: string, requestOptions?: RequestInit) => {
     }
   } catch (err) {
     console.error('Request error: ', err);
+    throw err;
   }
 };
 

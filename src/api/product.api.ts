@@ -4,7 +4,7 @@ import { QUERY_KEY } from '@/constants/queryKey';
 import { Product } from '@/types/product';
 import request from './core/request';
 
-export const getAllProducts = async () => {
+export const getAllProducts = async (): Promise<Product[]> => {
   return await request(API_PATH.PRODUCTS.ALL);
 };
 

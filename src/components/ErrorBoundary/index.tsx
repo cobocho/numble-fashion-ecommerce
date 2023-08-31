@@ -26,14 +26,21 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
     };
   }
 
+  componentDidCatch(error: Error) {
+    this.setState({
+      hasError: true,
+      error,
+    });
+  }
+
   render() {
     const { state, props } = this;
 
-    const { hasError } = state;
+    const { hasError, error } = state;
 
     const { children } = props;
 
-    return hasError ? <div>오류가 발생했어요!</div> : children;
+    return hasError ? <div>오류가 발생했어요! 에러 메시지: {error && error.message}</div> : children;
   }
 }
 export default ErrorBoundary;

@@ -3,7 +3,7 @@ import { API_PATH } from '@/constants/path';
 import { Token } from '@/types/user';
 import request from './core/request';
 
-export const getToken = async (id: string, password: string) => {
+export const getToken = async (id: string, password: string): Promise<Token> => {
   return await request(`${API_PATH.AUTH.TOKEN}?id=${id}&password=${password}`);
 };
 

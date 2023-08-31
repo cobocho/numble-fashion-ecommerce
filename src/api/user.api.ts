@@ -4,7 +4,7 @@ import { QUERY_KEY } from '@/constants/queryKey';
 import { User } from '@/types/user';
 import request from './core/request';
 
-export const getUserById = async (id: string) => {
+export const getUserById = async (id: string): Promise<User> => {
   return await request(API_PATH.USER.BY_ID.replace(':id', id));
 };
 

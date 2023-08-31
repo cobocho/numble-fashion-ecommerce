@@ -15,6 +15,7 @@ const queryClient = new QueryClient({
     queries: {
       suspense: true,
       useErrorBoundary: true,
+      retry: false,
     },
   },
 });
