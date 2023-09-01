@@ -3,10 +3,10 @@ import * as Style from './index.style';
 import Input from '@/common/input';
 import Button from '@/common/Button';
 import { CreateUserForm } from '@/types/auth';
-import signUpValidator from './signupValidator';
 import { createUser } from '@/api/auth.api';
 import { useNavigate } from 'react-router-dom';
 import { ROUTE_PATH } from '@/constants/path';
+import signUpValidator from './signUpValidator';
 
 const SignUp = () => {
   const navigate = useNavigate();
