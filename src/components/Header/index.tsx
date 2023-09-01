@@ -1,6 +1,7 @@
 import { ROUTE_PATH } from '@/constants/path';
 import userStore from '@/store/user';
 import * as Style from './index.style';
+import { AuthenticatedHeaderItems, UnauthenticatedHeaderItems } from './AuthHeaderItems';
 
 const Header = () => {
   const { user } = userStore();
@@ -10,17 +11,7 @@ const Header = () => {
       <Style.HeaderList>
         <Style.HeaderItem to={ROUTE_PATH.BASE}>상품 목록</Style.HeaderItem>
 
-        {user ? (
-          <>
-            <Style.HeaderItem to={ROUTE_PATH.LOGOUT}>로그아웃</Style.HeaderItem>
-            <Style.HeaderItem to={ROUTE_PATH.USER_PAGE.replace(':id', user.user_id)}>마이페이지</Style.HeaderItem>
-          </>
-        ) : (
-          <>
-            <Style.HeaderItem to={ROUTE_PATH.LOGIN}>로그인</Style.HeaderItem>
-            <Style.HeaderItem to={ROUTE_PATH.SIGNUP}>회원가입</Style.HeaderItem>
-          </>
-        )}
+        {user ? <AuthenticatedHeaderItems user={user} /> : <UnauthenticatedHeaderItems />}
       </Style.HeaderList>
     </Style.Container>
   );
