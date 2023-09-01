@@ -40,3 +40,5 @@ export const otherUser: User = {
   mileage: 1200,
   createdAt: '2023/05/21',
 };
+
+export const allUsers = [user, otherUser];
