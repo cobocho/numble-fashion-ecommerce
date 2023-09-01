@@ -21,5 +21,6 @@ export const API_PATH = Object.freeze({
 
   AUTH: {
     TOKEN: '/auth',
+    SIGNUP: '/signup',
   },
 });
