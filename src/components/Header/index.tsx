@@ -16,7 +16,10 @@ const Header = () => {
             <Style.HeaderItem to={ROUTE_PATH.USER_PAGE.replace(':id', user.user_id)}>마이페이지</Style.HeaderItem>
           </>
         ) : (
-          <Style.HeaderItem to={ROUTE_PATH.LOGIN}>로그인</Style.HeaderItem>
+          <>
+            <Style.HeaderItem to={ROUTE_PATH.LOGIN}>로그인</Style.HeaderItem>
+            <Style.HeaderItem to={ROUTE_PATH.SIGNUP}>회원가입</Style.HeaderItem>
+          </>
         )}
       </Style.HeaderList>
     </Style.Container>

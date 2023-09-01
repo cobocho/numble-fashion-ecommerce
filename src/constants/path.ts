@@ -3,6 +3,7 @@ export const ROUTE_PATH = Object.freeze({
 
   LOGIN: '/login',
   LOGOUT: '/logout',
+  SIGNUP: '/signup',
 
   USER_PAGE: '/user/:id',
 });

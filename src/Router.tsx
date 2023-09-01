@@ -5,6 +5,7 @@ import Layout from '@/components/Layout';
 import Login from '@/pages/Login';
 import Logout from '@/pages/Logout';
 import UserPage from '@/pages/UserPage';
+import SignUp from '@/pages/SignUp';
 
 const Router = () => {
   return (
@@ -21,6 +22,10 @@ const Router = () => {
         <Route
           path={ROUTE_PATH.LOGOUT}
           element={<Logout />}
+        />
+        <Route
+          path={ROUTE_PATH.SIGNUP}
+          element={<SignUp />}
         />
         <Route
           path={ROUTE_PATH.USER_PAGE}
