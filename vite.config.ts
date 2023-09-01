@@ -11,11 +11,11 @@ export default defineConfig({
   test: {
     globals: true,
     environment: 'happy-dom',
-    setupFiles: './tests/setup.ts',
+    setupFiles: '__tests__/setup.ts',
   },
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'),
+      '@': path.resolve(__dirname, '/src'),
     },
   },
 });
