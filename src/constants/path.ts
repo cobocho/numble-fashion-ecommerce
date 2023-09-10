@@ -17,6 +17,7 @@ export const API_PATH = Object.freeze({
 
   PRODUCTS: {
     ALL: '/product/products',
+    BY_ID: '/product/:id',
   },
 
   USER: {
