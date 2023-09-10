@@ -39,11 +39,13 @@ export const ProductDelivery = styled.span`
   font-size: 18px;
 `;
 
-export const ProductButtonGroup = styled.div`
+export const ProductOrder = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 20px;
   position: absolute;
   bottom: 30px;
   display: flex;
-  gap: 20px;
   width: 100%;
   height: 30px;
 `;
