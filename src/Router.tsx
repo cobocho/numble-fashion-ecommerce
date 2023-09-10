@@ -6,6 +6,7 @@ import Login from '@/pages/Login';
 import Logout from '@/pages/Logout';
 import UserPage from '@/pages/UserPage';
 import SignUp from '@/pages/SignUp';
+import Cart from './pages/Cart/Index';
 
 const Router = () => {
   return (
@@ -30,6 +31,10 @@ const Router = () => {
         <Route
           path={ROUTE_PATH.USER_PAGE}
           element={<UserPage />}
+        />
+        <Route
+          path={ROUTE_PATH.CART}
+          element={<Cart />}
         />
       </Route>
     </Routes>
