@@ -1,4 +1,4 @@
-import * as Style from './index.style';
+import { css } from '@emotion/css';
 
 export type ButtonSizes = 'sm' | 'md' | 'lg' | 'full';
 
@@ -7,10 +7,31 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const Button = ({ size = 'sm', onClick, ...rest }: ButtonProps) => {
+  const sizeConverter = (size: ButtonSizes) => {
+    switch (size) {
+      case 'full':
+        return '100%';
+      case 'sm':
+        return '100px';
+      case 'md':
+        return '300px';
+      case 'lg':
+        return '500px';
+    }
+  };
+
   return (
-    <Style.Container
+    <button
       onClick={onClick}
-      size={size}
+      className={css`
+        width: ${sizeConverter(size)};
+        height: 50px;
+        border-radius: 12px;
+
+        :hover {
+          cursor: pointer;
+        }
+      `}
       {...rest}
     />
   );
