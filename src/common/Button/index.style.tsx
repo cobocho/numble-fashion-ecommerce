@@ -16,4 +16,8 @@ export const Container = styled.button<{ size: ButtonSizes }>`
   }};
   height: 50px;
   border-radius: 12px;
+
+  :hover {
+    cursor: pointer;
+  }
 `;
