@@ -7,6 +7,7 @@ import Logout from '@/pages/Logout';
 import UserPage from '@/pages/UserPage';
 import SignUp from '@/pages/SignUp';
 import Cart from './pages/Cart/Index';
+import Product from './pages/Product/Index';
 
 const Router = () => {
   return (
@@ -35,6 +36,10 @@ const Router = () => {
         <Route
           path={ROUTE_PATH.CART}
           element={<Cart />}
+        />
+        <Route
+          path={ROUTE_PATH.PRODUCT}
+          element={<Product />}
         />
       </Route>
     </Routes>

@@ -8,6 +8,8 @@ export const ROUTE_PATH = Object.freeze({
   USER_PAGE: '/user/:id',
 
   CART: '/cart',
+
+  PRODUCT: '/product/:id',
 });
 
 export const API_PATH = Object.freeze({
