@@ -14,7 +14,7 @@ const productHandlers = [
 
     const product = products.find(({ product_no }) => String(product_no) === id);
 
-    if (product) {
+    if (!product) {
       return res(ctx.status(404), ctx.json({ message: '존재하지 않는 상품입니다!' }), ctx.delay(500));
     }
 
