@@ -19,5 +19,5 @@ export const useGetAllProducts = (options?: UseQueryOptions<Product[]>) => {
 };
 
 export const useGetProductById = (id: string, options?: UseQueryOptions<Product>) => {
-  return useQuery<Product>([QUERY_KEY.PRODUCT.ID_PRODUCT], () => getProductById(id), { ...options });
+  return useQuery<Product>([QUERY_KEY.PRODUCT.ID_PRODUCT, id], () => getProductById(id), { ...options });
 };
