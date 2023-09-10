@@ -6,6 +6,8 @@ export const ROUTE_PATH = Object.freeze({
   SIGNUP: '/signup',
 
   USER_PAGE: '/user/:id',
+
+  CART: '/cart',
 });
 
 export const API_PATH = Object.freeze({
