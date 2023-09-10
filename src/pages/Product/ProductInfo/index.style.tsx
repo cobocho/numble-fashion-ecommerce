@@ -33,6 +33,12 @@ export const ProductDesc = styled.p`
   font-size: 18px;
 `;
 
+export const ProductDelivery = styled.span`
+  display: block;
+  margin-bottom: 12px;
+  font-size: 18px;
+`;
+
 export const ProductButtonGroup = styled.div`
   position: absolute;
   bottom: 30px;
